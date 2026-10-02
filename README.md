@@ -165,7 +165,7 @@ the parameters that can be configured during installation. To check deployment e
 | `defaultImage`              | Docker image that will be used by default                                                                     | `[]`             |
 | `defaultImageTag`           | Docker image tag that will be used by default                                                                 | `[]`             |
 | `defaultImagePullPolicy`    | Docker image pull policy that will be used by default                                                         | `"IfNotPresent"` |
-| `podAffinityPreset`         | Pod affinity preset. Ignored if workload `affinity` is set. Allowed values: `soft` or `hard`                  | `soft`           |
+| `podAffinityPreset`         | Pod affinity preset. Ignored if workload `affinity` is set. Allowed values: `soft` or `hard`                  | `""`             |
 | `podAntiAffinityPreset`     | Pod anti-affinity preset. Ignored if workload `affinity` is set. Allowed values: `soft` or `hard`             | `soft`           |
 | `nodeAffinityPreset.type`   | Node affinity preset type. Ignored if workload `affinity` is set. Allowed values: `soft` or `hard`            | `""`             |
 | `nodeAffinityPreset.key`    | Node label key to match. Ignored if workload `affinity` is set                                                | `""`             |

@@ -77,7 +77,7 @@ labelSelector:
   matchLabels:
     {{- (include "helpers.app.selectorLabels" .context) | nindent 4 }}
     {{- with $extraLabels }}
-    {{ toYaml . }}
+    {{- toYaml . | nindent 4 }}
     {{- end }}
 namespaces:
 - {{ .context.Release.Namespace | quote }}
